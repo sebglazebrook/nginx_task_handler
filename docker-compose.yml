@@ -1,0 +1,16 @@
+data:
+  image: alpine:latest
+  command: /bin/true
+  volumes:
+    - /etc/nginx/sites-available/
+nginx:
+  image: nginx
+  volumes_from:
+    - data
+nginx_task_handler:
+  build: .
+  #image: sebglazebrook/nginx_task_handler
+  volumes_from:
+    - data
+  volumes:
+    - .:/code
