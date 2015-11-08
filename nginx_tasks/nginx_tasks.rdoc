@@ -1,0 +1,5 @@
+= nginx_tasks
+
+Generate this with
+    nginx_tasks rdoc
+After you have described your command line interface

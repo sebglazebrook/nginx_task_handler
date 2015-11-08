@@ -1,0 +1,6 @@
+= nginx_tasks
+
+Describe your project here
+
+:include:nginx_tasks.rdoc
+
