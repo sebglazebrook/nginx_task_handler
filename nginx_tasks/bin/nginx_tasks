@@ -35,14 +35,6 @@ command :remove_server do |c|
   end
 end
 
-desc 'Describe reload_config here'
-arg_name 'Describe arguments to reload_config here'
-command :reload_config do |c|
-  c.action do |global_options,options,args|
-    puts "reload_config command ran"
-  end
-end
-
 pre do |global,command,options,args|
   # Pre logic here
   # Return true to proceed; false to abort and not call the
